@@ -1,0 +1,11 @@
+main.container-pingserver {
+  width: 100%;
+  background-color: white;
+}
+
+main.container-pingserver header {
+  width: 100%;
+  padding: 5;
+  background-color: #6695bc;
+}
+/*# sourceMappingURL=style.min.css.map */

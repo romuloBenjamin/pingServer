@@ -1,0 +1,30 @@
+{
+    "conexoes": [
+        {"file":"conexao"},
+        {"file": "main"}
+    ],
+    "listas": [
+        {
+            "module":"public",
+            "folder": "jsons",
+            "file":"lista-batua"
+        },
+        {
+            "module":"public",
+            "folder": "jsons",
+            "file":"lista-hasegawa"
+        }
+    ],
+    "modules": [
+        {
+            "module":"public",
+            "folder":"class",
+            "file":"pageBuilder"
+        },
+        {
+            "module":"public",
+            "folder":"class",
+            "file":"controladora"
+        }
+    ]
+}
