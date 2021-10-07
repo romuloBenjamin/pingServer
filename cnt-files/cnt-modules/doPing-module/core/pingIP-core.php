@@ -13,3 +13,4 @@ for ($i = 0; $i < count($nVazios); $i++) {
 }
 if (count($nVazios2) > 5) echo "{\"ip\": \"" . $isPingin . "\", \"status\":\"1\" ,\"msn\": \"OPERANTE\"}";
 if (count($nVazios2) <= 5) echo "{\"ip\": \"" . $isPingin . "\", \"status\":\"0\" ,\"msn\": \"FALHA NA CONEXÃO\"}";
+exit();
