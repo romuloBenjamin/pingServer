@@ -38,3 +38,5 @@ function requestLoud(lista, tableName) {
         })
         .catch(console.error);
 }
+/*ATUALIZA DE TEMPO EM TEMPO -> 10M*/
+setTimeout(function(){ location.reload(); }, 600000);

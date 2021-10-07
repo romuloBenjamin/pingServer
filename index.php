@@ -14,3 +14,4 @@ echo "<!DOCTYPE html><html lang=\"pt-BR\">";
 $tryHTML->loudHeader();
 $tryHTML->loudBody();
 echo "</html>";
+var_dump(Date('H:s:i'));
