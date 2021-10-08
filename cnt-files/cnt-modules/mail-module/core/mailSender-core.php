@@ -11,4 +11,6 @@ $try->loudMods();
 /*CREATE LISTA PING ERRORS*/
 $ping = new Pinger_error_compound();
 $ping->entry = json_encode($_GET["data"]);
-$ping->set_listas_compound();
+$buildLista = $ping->set_listas_compound();
+$ping->entry = $buildLista;
+$ping->pinger_mail();

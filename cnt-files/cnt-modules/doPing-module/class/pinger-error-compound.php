@@ -39,7 +39,8 @@ class Pinger_error_compound
         /*IF IP EXISTS*/
         $this->build["lista"] = $erros->unique_ip();
         $erros->build = $this->build;
-        return $erros->put_json();
+        $erros->put_json();
+        return $erros->build["lista"];
     }
 
     /*SERA BUILD*/
@@ -79,5 +80,11 @@ class Pinger_error_compound
         }
         $this->build["lista"]->FALHAS_CONEXAO->servidores = json_decode(json_encode($nArray));
         return $this->build["lista"];
+    }
+
+    /*SEND MAIL*/
+    public function pinger_mail()
+    {
+        var_dump("not implemented");
     }
 }
