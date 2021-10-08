@@ -1,5 +1,20 @@
 [
     {
+        "ip":"172.16.0.32",
+        "name":"BLACK ARMOR",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.77",
+        "name":"CPD ITAQUERA",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.104",
+        "name":"DVR HASEGAWA",
+        "status":"Não Definido"
+    },
+    {
         "ip":"172.16.0.105",
         "name":"DVR HASEGAWA",
         "status":"Não Definido"

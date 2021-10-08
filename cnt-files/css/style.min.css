@@ -1,3 +1,14 @@
+/*SIZE CONTAINERS*/
+/*FONTS*/
+main.container-pingserver {
+  width: 100%;
+}
+
+main.container-pingserver * {
+  color: black;
+  size: 1rem;
+}
+
 main.container-pingserver {
   width: 100%;
   background-color: white;
@@ -7,5 +18,9 @@ main.container-pingserver header {
   width: 100%;
   padding: 5;
   background-color: #6695bc;
+}
+
+table tbody tr td {
+  padding: 2px !important;
 }
 /*# sourceMappingURL=style.min.css.map */

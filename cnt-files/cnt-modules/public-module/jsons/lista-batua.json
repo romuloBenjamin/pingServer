@@ -1,7 +1,12 @@
 [
     {
         "ip":"172.16.0.1",
-        "name":"SERVER AD",
+        "name":"AD PRIMARIO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.2",
+        "name":"AD SECUNDARIO",
         "status":"Não Definido"
     },
     {
@@ -11,9 +16,19 @@
     },
     {
         "ip":"172.16.0.4",
-        "name":"COLETORES",
+        "name":"TS COLETORES",
         "status":"Não Definido"
     },
+    {
+        "ip":"172.16.0.5",
+        "name":"SERVER CANHOTOS",
+        "status":"Não Definido"
+    },    
+    {
+        "ip":"172.16.0.7",
+        "name":"TZ0",
+        "status":"Não Definido"
+    },    
     {
         "ip":"172.16.0.8",
         "name":"SERVER SIF",
@@ -31,7 +46,7 @@
     },
     {
         "ip":"172.16.0.12",
-        "name":"SERVIDOR AD2",
+        "name":"AD TERCIARIO",
         "status":"Não Definido"
     },
     {
@@ -41,12 +56,12 @@
     },
     {
         "ip":"172.16.0.18",
-        "name":"SERVIDOR MPF",
+        "name":"SERVER POLICIA CIVIL",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.19",
-        "name":"VW SIF",
+        "name":"BLACK ARMOR",
         "status":"Não Definido"
     },
     {
@@ -71,22 +86,22 @@
     },
     {
         "ip":"172.16.0.31",
-        "name":"SERVIDOR DE BACKUP's",
-        "status":"Não Definido"
-    },
-    {
-        "ip":"172.16.0.32",
-        "name":"SERVIDOR DE BACKUP's (HASEGAWA)",
+        "name":"SERVER ACRONIS",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.33",
-        "name":"SERVIDOR SERVIÇOS ERP",
+        "name":"SERVER NFE",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.34",
+        "name":"SERVER DANFEVIEW",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.36",
-        "name":"VB-SYMANTEC",
+        "name":"KASPERSKY",
         "status":"Não Definido"
     },
     {
@@ -100,38 +115,218 @@
         "status":"Não Definido"
     },
     {
-        "ip":"172.16.0.77",
-        "name":"CPD ITAQUERA",
+        "ip":"172.16.0.56",
+        "name":"SONIC WALL ANALYZER",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.60",
+        "name":"VMWARE ESXI APBIND",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.61",
+        "name":"SERVER APBIND",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.62",
+        "name":"SERVER ZIMBRA",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.87",
-        "name":"SERVIDOR DO PONTO",
+        "name":"SERVER DO PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.90",
+        "name":"CONTMATIC",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.99",
+        "name":"DVR'S ELIANE",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.100",
-        "name":"DVR'S CAMERAS",
+        "name":"DVR'S ELIANE",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.101",
-        "name":"DVR'S CAMERAS",
+        "name":"DVR'S ELIANE",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.102",
-        "name":"DVR'S CAMERAS",
+        "name":"DVR'S ELIANE",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.103",
-        "name":"DVR'S CAMERAS",
+        "name":"DVR'S ELIANE",
         "status":"Não Definido"
     },
     {
         "ip":"172.16.0.120",
-        "name":"CONTMATIC",
+        "name":"SERVER SERVIÇOS RH",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.121",
+        "name":"TSPLUS PRIMARIO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.122",
+        "name":"TSPLUS SECUNDARIO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.140",
+        "name":"CAMERA - 01",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.141",
+        "name":"CAMERA - 02",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.142",
+        "name":"CAMERA - 03",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.143",
+        "name":"CAMERA - 04",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.144",
+        "name":"CAMERA - 05",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.145",
+        "name":"CAMERA - 06",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.146",
+        "name":"CAMERA - 07",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.147",
+        "name":"CAMERA - 08",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.148",
+        "name":"CAMERA - 09",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.149",
+        "name":"RADIO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.152",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.153",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.154",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.155",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.156",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.157",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.159",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.160",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.161",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.162",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.163",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.164",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.166",
+        "name":"RELOGIO DE PONTO",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.241",
+        "name":"CL1-ESXI01",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.242",
+        "name":"CL1-ESXI02",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.243",
+        "name":"CL1-ESXI03",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.244",
+        "name":"CL1-VCENTER01",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.248",
+        "name":"SW-SAN-01",
+        "status":"Não Definido"
+    },
+    {
+        "ip":"172.16.0.249",
+        "name":"SW-SAN-02",
         "status":"Não Definido"
     }
 ]

@@ -53,7 +53,7 @@ class Pinger_error_compound
     public function zera_base_build()
     {
         if ($this->build["current_date"] != strtotime($this->build["lista"]->data)) return $this->build["base"];
-        if (($this->build["lista"]->update + 10) > date("i")) {
+        if (($this->build["lista"]->update + 5) > date("i")) {
             return $this->build["lista"];
         }
         return $this->build["base"];
