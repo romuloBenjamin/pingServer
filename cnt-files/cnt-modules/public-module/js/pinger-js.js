@@ -13,8 +13,19 @@ function requestLoud(lista, tableName) {
     /*TABLE PING NAMES*/
     var placer = document.querySelector("table#tabela-"+tableName+" > tbody");
     /*REQUEST*/
+
+    /*HEADERS to FETCH REQUEST*/
+    var myHeaders = new Headers();
+    myHeaders.append('pragma', 'no-cache');
+    myHeaders.append('cache-control', 'no-cache');
+
+    var myInit = { 
+        method: 'GET',
+        headers: myHeaders,
+    };
+
     var pinBatua = new Request(lista);
-    fetch(pinBatua)
+    fetch(pinBatua, myInit)
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -38,5 +49,13 @@ function requestLoud(lista, tableName) {
         })
         .catch(console.error);
 }
-/*ATUALIZA DE TEMPO EM TEMPO -> 10M*/
-setTimeout(function(){ location.reload(); }, 600000);
+
+var data = new Date();
+var cData = data.toString();
+if(cData.split(" ")[0]){
+    if(cData.split(" ")[0] === "sat"){ /*ATUALIZA DE TEMPO EM TEMPO -> 2.5M*/
+        setTimeout(function(){ location.reload(); }, 150000);
+    }else{ /*ATUALIZA DE TEMPO EM TEMPO -> 5M*/
+        setTimeout(function(){ location.reload(); }, 300000);
+    }
+}
