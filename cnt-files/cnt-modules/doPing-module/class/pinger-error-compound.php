@@ -1,4 +1,10 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\OAuth;
+use League\OAuth2\Client\Provider\Google;
+
 class Pinger_error_compound
 {
     var $entry;
@@ -85,6 +91,54 @@ class Pinger_error_compound
     /*SEND MAIL*/
     public function pinger_mail()
     {
-        var_dump("not implemented");
+        date_default_timezone_set('America/Sao_Paulo');
+        require '../../../../vendor/autoload.php';
+        $mail = new PHPMailer(true);
+        $mail->isSMTP();
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $mail->Host = 'smtp.gmail.com';
+        $mail->Port = 465;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        //$mail->SMTPSecure = "tls";
+        $mail->SMTPAuth = true;
+        $mail->Username = "sales.cleaner.externo2@gmail.com";
+        $mail->Password = "Cle@nnerSales";
+
+        $mail->setFrom('sales.cleaner.externo@gmail.com', 'PING MONITOR SALES');
+        $mail->addReplyTo('sales.cleaner.externo@gmail.com', 'PING MONITOR SALES');
+        $mail->addAddress("luiz.gustavo.devasconcelos@gmail.com", "Luiz Gustavo");
+        $mail->addAddress("gustavo.vasconcelos@cleaner.com.br", "Luiz Gustavo");
+        $mail->addCC("mos.marcelo@gmail.com", "Marcelo Oliveira");
+        $mail->addCC("mos.marcelo@cleaner.com.br", "Marcelo Oliveira");
+        $mail->addCC("romulo.franco@cleaner.com.br", "Romulo Franco");
+        $mail->addCC("matheus.vello@cleaner.com.br", "Matheus Vello");
+        $mail->addCC("fhelipe.santos@cleaner.com.br", "Fhelipe Santos");
+        $mail->addBCC("sales.cleaner.externo@gmail.com", "PING MONITOR SALES");
+
+        $mail->Subject = '::AVISO PingServer::';
+
+        $bds = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">';
+        $bds .= '<div class="d-flex justify-content-start align-items-center w-100" style="background-color:#6695BC;"> <div class="d-flex" style="width: 15rem;"><img src="http://www.intra.cleaner.com.br/img/logo_min.png"></div> <div class="d-flex" style="color: #fff;">Ping Server Status</div> </div>';
+        $bds .= '<table class="table">';
+        $bds .= '<thead> <tr> <th scope="col">IP</th> <th scope="col">Status</th> <th scope="col">Servidor</th> </tr> </thead>';
+        $bds .= '<tbody>';
+        $patterns = $this->entry->FALHAS_CONEXAO->servidores;
+        for ($i = 0; $i < count($patterns); $i++) {
+            $bds .= '<tr>';
+            $bds .= '<td>' . trim($patterns[$i]->ip) . '</td>';
+            $bds .= '<td>FALHA NA ENTRGA DO PACOTE (' . date('d/m/Y H:i:s') . ')</td>';
+            $bds .= '<td>' . trim($patterns[$i]->nome) . '</td>';
+            $bds .= '</tr>';
+        }
+        $bds .= '</tbody> </table>';
+        $mail->Body = $bds;
+        //Replace the plain text body with one created manually
+        $mail->AltBody = 'FALHA NA ENTRGA DO PACOTE';
+        //send the message, check for errors
+        if (!$mail->send()) {
+            return json_encode("Mailer Error: " . $mail->ErrorInfo);
+        } else {
+            return json_encode("Message sent!");
+        }
     }
 }
