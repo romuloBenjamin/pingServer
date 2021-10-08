@@ -25,6 +25,11 @@
             "module":"public",
             "folder":"class",
             "file":"controladora"
+        },
+        {
+            "module":"doPing",
+            "folder":"class",
+            "file":"pinger-error-compound"
         }
     ]
 }
