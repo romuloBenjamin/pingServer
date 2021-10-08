@@ -1,10 +1,14 @@
 /*LISTAS JSON*/
 var pingBatua = "cnt-files/cnt-modules/public-module/jsons/lista-batua.json";
+var pingDVRS = "cnt-files/cnt-modules/public-module/jsons/lista-dvreliane.json";
+var pingRelogios = "cnt-files/cnt-modules/public-module/jsons/lista-relogios.json";
 var pingHasegawa = "cnt-files/cnt-modules/public-module/jsons/lista-hasegawa.json";
 
 /*EVENT ON LOUD*/
 window.addEventListener("load", function(){
     var readBatuaJSONS = requestLoud(pingBatua, "batua");
+    var readDVREJSONS = requestLoud(pingDVRS, "dvreliane");
+    var readRelogios = requestLoud(pingRelogios, "relogios");
     var readHasegawaJSONS = requestLoud(pingHasegawa, "hasegawa");
 });
 

@@ -6,7 +6,7 @@ main.container-pingserver {
 
 main.container-pingserver * {
   color: black;
-  size: 1rem;
+  size: 0.8rem;
 }
 
 main.container-pingserver {
@@ -22,5 +22,6 @@ main.container-pingserver header {
 
 table tbody tr td {
   padding: 2px !important;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=style.min.css.map */
