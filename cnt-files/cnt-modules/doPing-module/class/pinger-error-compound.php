@@ -101,8 +101,8 @@ class Pinger_error_compound
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         //$mail->SMTPSecure = "tls";
         $mail->SMTPAuth = true;
-        $mail->Username = "sales.cleaner.externo2@gmail.com";
-        $mail->Password = "Cle@nnerSales";
+        $mail->Username = "";
+        $mail->Password = "";
 
         $mail->setFrom('sales.cleaner.externo@gmail.com', 'PING MONITOR SALES');
         $mail->addReplyTo('sales.cleaner.externo@gmail.com', 'PING MONITOR SALES');
