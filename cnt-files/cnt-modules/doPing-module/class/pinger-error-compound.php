@@ -104,16 +104,16 @@ class Pinger_error_compound
         $mail->Username = "";
         $mail->Password = "";
 
-        $mail->setFrom('sales.cleaner.externo@gmail.com', 'PING MONITOR SALES');
-        $mail->addReplyTo('sales.cleaner.externo@gmail.com', 'PING MONITOR SALES');
-        $mail->addAddress("luiz.gustavo.devasconcelos@gmail.com", "Luiz Gustavo");
-        $mail->addAddress("gustavo.vasconcelos@cleaner.com.br", "Luiz Gustavo");
-        $mail->addCC("mos.marcelo@gmail.com", "Marcelo Oliveira");
-        $mail->addCC("mos.marcelo@cleaner.com.br", "Marcelo Oliveira");
-        $mail->addCC("romulo.franco@cleaner.com.br", "Romulo Franco");
-        $mail->addCC("matheus.vello@cleaner.com.br", "Matheus Vello");
-        $mail->addCC("fhelipe.santos@cleaner.com.br", "Fhelipe Santos");
-        $mail->addBCC("sales.cleaner.externo@gmail.com", "PING MONITOR SALES");
+        $mail->setFrom('EMAIL ORIGEM', 'PING MONITOR SALES');
+        $mail->addReplyTo('EMAIL DE RESPOSTA', 'PING MONITOR SALES');
+        $mail->addAddress("PARA QUEM", "NOME DA PESSOA");
+        $mail->addAddress("PARA QUEM", "NOME DA PESSOA");
+        $mail->addCC("PARA QUEM", "NOME DA PESSOA");
+        $mail->addCC("PARA QUEM", "NOME DA PESSOA");
+        $mail->addCC("PARA QUEM", "NOME DA PESSOA");
+        $mail->addCC("PARA QUEM", "NOME DA PESSOA");
+        $mail->addCC("PARA QUEM", "NOME DA PESSOA");
+        $mail->addBCC("PARA QUEM", "NOME DA PESSOA");
 
         $mail->Subject = '::AVISO PingServer::';
 
